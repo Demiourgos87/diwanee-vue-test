@@ -1,0 +1,21 @@
+*.serialize
+*.bak
+*.bk
+*.old
+.svn
+node_modules/
+vendor/
+
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.swp
+
+# IDE junk files
+.project
+.buildpath
+.settings
+.idea
+
+# Ignore dist/ dir if multiple people are working on the project
+# dist/
