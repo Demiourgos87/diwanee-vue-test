@@ -1,8 +1,8 @@
 # Diwanee test page with Webpack and Vue
 
 ## Usage
-Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/install)  
-Install webpack cli globally on your machine ```yarn add webpack``` (on Linux, may require ```sudo```)
+Install webpack cli globally on your machine ```npm install -g webpack``` (on Linux, may require ```sudo```)
+Install **yarn:** [Installation instructions](https://yarnpkg.com/en/docs/install)
 
 ## Development setup:
 * Clone the repository ```git clone <repo url>```
