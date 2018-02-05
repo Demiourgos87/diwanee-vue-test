@@ -17,5 +17,7 @@ vendor/
 .settings
 .idea
 
+stats.json
+
 # Ignore dist/ dir if multiple people are working on the project
 # dist/
