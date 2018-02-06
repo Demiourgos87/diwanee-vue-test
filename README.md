@@ -30,3 +30,5 @@ A tool for bundle analysis, provides useful information about the state of the b
 1. Generate webpack stats file, from project root enter ```webpack --profile --json --config=config/build.config.js > stats.json```
 2. Go to: [http://webpack.github.io/analyse/](http://webpack.github.io/analyse/)
 3. Upload the generated stats.json file
+
+Check the live page [here](https://demiourgos87.github.io/diwanee-vue-test/dist/)
