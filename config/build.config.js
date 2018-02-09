@@ -31,7 +31,18 @@ module.exports = {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: [ 'css-loader', 'postcss-loader', 'sass-loader'],
+                    use: [
+                        'css-loader',
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                config: {
+                                    path: './config/postcss.config.js'
+                                }
+                            }
+                        },
+                        'sass-loader'
+                    ],
                     publicPath: '../'
                 })
             },
