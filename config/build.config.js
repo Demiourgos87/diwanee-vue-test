@@ -61,16 +61,24 @@ module.exports = function() {
                     }
                 },
                 {
-                    test: /\.(jpe?g|png|gif|svg)$/,
-                    exclude: /(node_modules|fonts)/,
-                    use: {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                exclude: /(node_modules|fonts)/,
+                use: [
+                    {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
                             outputPath: 'assets/img/'
                         }
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                        },
                     }
-                },
+                ]
+            },
                 {
                     test: /\.vue$/,
                     use: {
